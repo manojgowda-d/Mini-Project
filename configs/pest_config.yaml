@@ -1,0 +1,25 @@
+# YOLOv8 Pest Detection Configuration
+
+dataset:
+  raw_dir: "data/raw/pest"
+  processed_dir: "data/pest"
+  yaml_path: "configs/pest_dataset.yaml"
+  split_ratio: [0.7, 0.15, 0.15]
+  seed: 42
+
+model:
+  version: "yolov8n.pt"  # Options: yolov8n.pt, yolov8s.pt, yolov8m.pt
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+
+training:
+  imgsz: 640
+  batch_size: 16
+  epochs: 25
+  device: "auto"
+  workers: 4
+
+paths:
+  output_dir: "models/yolov8"
+  best_model_path: "models/yolov8/weights/best.pt"
+  metrics_output_path: "models/yolov8/evaluation_metrics.json"

@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# Data & Datasets
+data/
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
+*.png
+*.PNG
+
+# Models / Weights
+*.pt
+*.pth
+*.h5
+*.onnx
+
+# Training outputs
+runs/
+outputs/
+*.log
+
+# Streamlit / IDE
+.streamlit/
+.idea/
+.vscode/
+.DS_Store
+
+# Environment
+.env

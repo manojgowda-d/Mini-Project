@@ -1,0 +1,6 @@
+names:
+  0: pest
+path: C:/DESKTOP/mini project/data/pest
+test: images/test
+train: images/train
+val: images/val
